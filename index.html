@@ -1,0 +1,115 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Home Page of Nathan Macfarlane">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Nathan Macfarlane | e91.me</title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo+2:800|Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-deep_orange.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    #view-source {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="e91-blog mdl-layout mdl-js-layout has-drawer is-upgraded">
+      <main class="mdl-layout__content">
+        <div class="e91-blog__posts mdl-grid">
+
+          <div class="mdl-card avatar mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop">
+            <div class="mdl-card__media mdl-color--white mdl-color-text--grey-600">
+            </div>
+            <div class="mdl-card__supporting-text meta meta--fill mdl-color-text--grey-900">
+              <div>
+                <strong>Hi, I'm Nathan</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="mdl-card nixie mdl-cell mdl-cell--8-col">
+            <div class="mdl-card__media mdl-color-text--grey-50">
+              <h3 class="nixie-site-name"><a href="https://nixlabs.com.au">Nix Labs</a></h3>
+            </div>
+          </div>
+
+          <div class="mdl-card projects mdl-cell mdl-cell--12-col">
+            <div class="mdl-card__media mdl-color-text--grey-50">
+              <h3>Projects</h3>
+            </div>
+            <div class="mdl-card__supporting-text meta mdl-color-text--grey-300">
+              More project details comming soon...
+            </div>
+          </div>
+        </div>
+        <footer class="mdl-mini-footer">
+
+          <div class="mdl-mini-footer--left-section">
+            <a href="https://www.linkedin.com/in/nathan33174"><button class="social mdl-button mdl-js-button mdl-js-ripple-effect mdl-color--blue-700">
+              <i class="zmdi zmdi-linkedin"></i>
+            </button></a>
+            <a href="https://github.com/n33174"><button class="social mdl-button mdl-js-button mdl-js-ripple-effect mdl-color--grey-800">
+              <i class="zmdi zmdi-github-box"></i>
+            </button></a>
+            <a href="https://instagram.com/nathan33174/"><button class="social mdl-button mdl-js-button mdl-js-ripple-effect mdl-color--pink">
+              <i class="zmdi zmdi-instagram"></i>
+            </button></a>
+          </div>
+
+          <div class="mdl-mini-footer--right-section">
+            &copy; 2019 Nathan Macfarlane. All rights reserved.
+            </button>
+          </div>
+        </footer>
+      </main>
+      <div class="mdl-layout__obfuscator"></div>
+    </div>
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  </body>
+  <script>
+    Array.prototype.forEach.call(document.querySelectorAll('.mdl-card__media'), function(el) {
+      var link = el.querySelector('a');
+      if(!link) {
+        return;
+      }
+      var target = link.getAttribute('href');
+      if(!target) {
+        return;
+      }
+      el.addEventListener('click', function() {
+        location.href = target;
+      });
+    });
+  </script>
+</html>
