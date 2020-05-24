@@ -1,115 +1,144 @@
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Home Page of Nathan Macfarlane">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>Nathan Macfarlane | e91.me</title>
-
-    <!-- Add to homescreen for Chrome on Android -->
-    <meta name="mobile-web-app-capable" content="yes">
-    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
-
-    <!-- Add to homescreen for Safari on iOS -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
-    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
-
-    <!-- Tile icon for Win8 (144x144 + tile color) -->
-    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
-    <meta name="msapplication-TileColor" content="#3372DF">
-
-    <link rel="shortcut icon" href="images/favicon.png">
-
-    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
-    <!--
-    <link rel="canonical" href="http://www.example.com/">
-    -->
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo+2:800|Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-deep_orange.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <head>
+        <meta name="description" content="Home Page of Nathan Macfarlane">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+        <title>Nathan Macfarlane | e91.me</title>
+        <link rel="shortcut icon" href="images/favicon.png">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo+2:800|Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
     <style>
-    #view-source {
-      position: fixed;
-      display: block;
-      right: 0;
-      bottom: 0;
-      margin-right: 40px;
-      margin-bottom: 40px;
-      z-index: 900;
-    }
-    </style>
-  </head>
-  <body>
-    <div class="e91-blog mdl-layout mdl-js-layout has-drawer is-upgraded">
-      <main class="mdl-layout__content">
-        <div class="e91-blog__posts mdl-grid">
-
-          <div class="mdl-card avatar mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop">
-            <div class="mdl-card__media mdl-color--white mdl-color-text--grey-600">
+            html {
+            height:100%;
+            }
+            body {
+            margin:0;
+            }
+            .bg {
+            animation:slide 15s ease-in-out infinite alternate;
+            background-image: linear-gradient(-10deg, #034f70 50%, #002c40 50%);
+            bottom:0;
+            left:-50%;
+            opacity:.8;
+            position:fixed;
+            right:-50%;
+            top:00;
+            z-index:-1;
+            }
+            .bg2 {
+            animation-direction:alternate-reverse;
+            animation-duration:10s;
+            }
+            .bg3 {
+            animation-duration:20s;
+            }
+            .content {
+            background-color:rgba(255, 255, 255, 0.7);
+            border-radius:.25em;
+            box-shadow:0 0 .25em rgba(0,0,0,.25);
+            box-sizing:border-box;
+            left:50%;
+            padding:5vmin;
+            position:fixed;
+            text-align:center;
+            top:50%;
+            transform:translate(-50%, -50%);
+            }
+            @keyframes slide {
+            0% {
+                transform:translateX(-25%);
+            }
+            100% {
+                transform:translateX(25%);
+            }
+            }
+            a.nixie {
+            text-decoration: none;
+            color: #ff9100;
+            font-family: "Exo 2", Helvetica, Arial, sans-serif;
+            font-size: 90px;
+            letter-spacing: 0px;
+            text-shadow:0 0 .05em rgba(0,0,0,.25);
+            }
+            .heading {
+            color: #24292e;
+            font-family: "Exo 2", Helvetica, Arial, sans-serif;
+            font-size: 40px;
+            text-shadow:0 0 .05em rgba(0,0,0,.25);
+            }
+            .avatar {
+            border-radius: 50%;
+            box-shadow:0 0 .05em rgba(0,0,0,.25);
+            margin: 2em;
+            }
+            .about {
+                position: absolute;
+                margin: 0px;
+                padding: 5px;
+                bottom: 0px;
+                right: 0px;
+                font-size: 8px;
+                font-family: sans-serif;
+                color: #b8b8b8;
+            }
+            .fa {
+            padding: 20px;
+            font-size: 30px;
+            width: 30px;
+            text-align: center;
+            text-decoration: none;
+            text-shadow:0 0 .05em rgba(0,0,0,.25);
+            }
+            .fa:hover {
+            opacity: 0.7;
+            }
+            .fa-linkedin {
+            background: #2867B2;
+            color: white;
+            }
+            .fa-github {
+            background: #24292e;
+            color: white;
+            }
+            .fa-instagram {
+            background: #E1306C;
+            color: white;
+            }
+            .fa-facebook {
+            background: #4267B2;
+            color: white;
+            }
+            .fa-pinterest {
+            background: #BD081C;
+            color: white;
+            }
+        </style>
+    <body>
+        <div class="bg"></div>
+        <div class="bg bg2"></div>
+        <div class="bg bg3"></div>
+        <div class="content">
+            <div>
+                <h1 class="heading">e91.me | Nathan Macfarlane</h1>
             </div>
-            <div class="mdl-card__supporting-text meta meta--fill mdl-color-text--grey-900">
-              <div>
-                <strong>Hi, I'm Nathan</strong>
-              </div>
+            <div>
+                <a href="https://www.linkedin.com/in/nathan33174" class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/n33174" class="fa fa-github"></a>
+                <a href="https://instagram.com/nathan33174/" class="fa fa-instagram"></a>
             </div>
-          </div>
-
-          <div class="mdl-card nixie mdl-cell mdl-cell--8-col">
-            <div class="mdl-card__media mdl-color-text--grey-50">
-              <h3 class="nixie-site-name"><a href="https://nixlabs.com.au">Nix Labs</a></h3>
+            <div>
+                <img class="avatar" src="https://www.gravatar.com/avatar/2d7e0bfe654f2d1c07ffa5474087a19e?s=250"></img>
             </div>
-          </div>
-
-          <div class="mdl-card projects mdl-cell mdl-cell--12-col">
-            <div class="mdl-card__media mdl-color-text--grey-50">
-              <h3>Projects</h3>
+            <div>
+                <a href="https://nixlabs.com.au" class="nixie">Nix Labs</a>
             </div>
-            <div class="mdl-card__supporting-text meta mdl-color-text--grey-300">
-              More project details comming soon...
+            <div>
+                <a href="https://www.facebook.com/NIXLabs.com.au" class="fa fa-facebook"></i></a>
+                <a href="https://www.instagram.com/_nixlabs/" class="fa fa-instagram"></a>
+                <a href="https://www.pinterest.com.au/nixlabs/" class="fa fa-pinterest"></a>
+                <a href="https://linkedin.com/company/nix-labs" class="fa fa-linkedin"></i></a>
             </div>
-          </div>
         </div>
-        <footer class="mdl-mini-footer">
-
-          <div class="mdl-mini-footer--left-section">
-            <a href="https://www.linkedin.com/in/nathan33174"><button class="social mdl-button mdl-js-button mdl-js-ripple-effect mdl-color--blue-700">
-              <i class="zmdi zmdi-linkedin"></i>
-            </button></a>
-            <a href="https://github.com/n33174"><button class="social mdl-button mdl-js-button mdl-js-ripple-effect mdl-color--grey-800">
-              <i class="zmdi zmdi-github-box"></i>
-            </button></a>
-            <a href="https://instagram.com/nathan33174/"><button class="social mdl-button mdl-js-button mdl-js-ripple-effect mdl-color--pink">
-              <i class="zmdi zmdi-instagram"></i>
-            </button></a>
-          </div>
-
-          <div class="mdl-mini-footer--right-section">
-            &copy; 2019 Nathan Macfarlane. All rights reserved.
-            </button>
-          </div>
-        </footer>
-      </main>
-      <div class="mdl-layout__obfuscator"></div>
-    </div>
-    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-  </body>
-  <script>
-    Array.prototype.forEach.call(document.querySelectorAll('.mdl-card__media'), function(el) {
-      var link = el.querySelector('a');
-      if(!link) {
-        return;
-      }
-      var target = link.getAttribute('href');
-      if(!target) {
-        return;
-      }
-      el.addEventListener('click', function() {
-        location.href = target;
-      });
-    });
-  </script>
+        <p class="about">&copy; 2020 Nathan Macfarlane, All rights reserved</p>
+    </body>
 </html>
