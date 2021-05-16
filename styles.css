@@ -55,8 +55,10 @@ a.nixie {
 
 /* FontAwesome */
 .fa {
+    margin: 10px;
     padding: 10px;
-    font-size: 30px !important;
+    width: 60px;
+    font-size: 40px !important;
     text-align: center;
     text-decoration: none;
 }
@@ -121,6 +123,5 @@ a.nixie {
   .waves {
     height:40px;
     min-height:40px;
-  }
   }
 }
