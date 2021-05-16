@@ -8,19 +8,42 @@
     <meta name="description" content="Nathan Macfarlane | NIX labs">
     <meta name="author" content="Nathan Macfarlane">
     <link href="https://unpkg.com/@primer/css@^16.0.0/dist/primer.css" rel="stylesheet" />
-    
+    <link href="styles.css" rel="stylesheet" />
+
 
 </head>
 
 <body>
-    <div data-color-mode="auto" data-light-theme="light" data-dark-theme="dark_dimmed" class="p-3">
-        <h4>Synced to system</h4>
-        <code class="d-block mt-1 mb-3 color-text-secondary">
-            data-color-mode="auto" data-light-theme="light" data-dark-theme="dark_dimmed"
-        </code>
-        <button class="btn">Button</button>
-        <span class="Label ml-2">Label</span>
-        <span class="Counter ml-2">123</span>
+    <div class="header">
+        <!--Content before waves-->
+        <div class="inner-header flex">
+        <h1>Nathan Macfarlane</h1>
         </div>
-</body>
+        
+        <!--Waves Container-->
+        <div>
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(15,22,38,0.7" />
+        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(15,22,38,0.5)" />
+        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(15,22,38,0.3)" />
+        <use xlink:href="#gentle-wave" x="48" y="7" fill="#0F1626" />
+        </g>
+        </svg>
+        </div>
+        <!--Waves end-->
+        
+        </div>
+        <!--Header ends-->
+        
+        <!--Content starts-->
+        <div class="content flex">
+        <p>2021</p>
+        </div>
+        <!--Content ends-->
+    </body>
 </html>
