@@ -124,4 +124,10 @@ a.nixie {
     height:40px;
     min-height:40px;
   }
+  section, article, .section, .article, .paper {
+    max-width: 95vw;
+  }
+  .avatar {
+    display: none;
+  }
 }
