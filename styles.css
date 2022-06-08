@@ -7,6 +7,7 @@ a.nixie {
 }
 
 .avatar {
+    background-color: #ffffff;
     background-image: url('https://www.gravatar.com/avatar/2d7e0bfe654f2d1c07ffa5474087a19e?s=150');
     width: 150px;
     height: 150px;
