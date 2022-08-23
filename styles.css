@@ -7,7 +7,7 @@ a.nixie {
 }
 
 .avatar {
-    background-color: #ffffff;
+    background-color: #F5F5F5;
     background-image: url('https://www.gravatar.com/avatar/2d7e0bfe654f2d1c07ffa5474087a19e?s=150');
     width: 150px;
     height: 150px;
@@ -19,14 +19,14 @@ a.nixie {
 .header {
   position:relative;
   text-align:center;
-  background: linear-gradient(30deg, #FF633D 0%, #FF833D 100%);
+  background: linear-gradient(30deg, #fe5018 0%, #ff7241 100%);
   color:#F5F5F5;
 }
 
 .footer {
     position:relative;
     text-align:center;
-    color:#FF633D;
+    color:#F5F5F5;
     font-size: 9px;
     padding: 3px;
   }
